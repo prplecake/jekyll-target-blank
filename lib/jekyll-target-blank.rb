@@ -27,6 +27,7 @@ module Jekyll
         @should_add_extra_rel_attribute_values = false
         @extra_rel_attribute_values            = nil
 
+        puts content
         return unless content.output.include?("<a")
 
         initialise
